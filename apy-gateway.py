@@ -1,9 +1,9 @@
 from flask import Flask, jsonify, request
 import requests, os
 
-RAPPORT_SERVICE_URL = os.getenv('RAPPORT_SERVICE_URL', 'http://localhost:5001')
-SKADES_SERVICE_URL = os.getenv('SKADES_SERVICE_URL', 'http://localhost:5002')
-LEJEAFTALE_SERVICE_URL = os.getenv('http://localhost:5003')
+RAPPORT_SERVICE_URL = os.getenv('RAPPORT_SERVICE_URL')
+SKADES_SERVICE_URL = os.getenv('SKADES_SERVICE_URL')
+LEJEAFTALE_SERVICE_URL = os.getenv('LEJEAFTALE_SERVICE_URL')
 
 app = Flask(__name__)
 
