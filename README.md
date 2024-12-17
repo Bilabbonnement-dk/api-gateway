@@ -92,13 +92,13 @@ API-gateway servicen eksponerer en række endpoints til de tre services. Nedenfo
 1. ### Rapport Service
 Endpoint	Metode	Beskrivelse
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/rapport/login	                        |   POST	            |   Log ind og få adgang til Rapport Service.               |
+|`/rapport/login	`                        |   POST	            |   Log ind og få adgang til Rapport Service.               |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/rapport/protected	                    |   GET	                |   Kontroller adgang til beskyttede data.                  |
+|`/rapport/protected	`                    |   GET	                |   Kontroller adgang til beskyttede data.                  |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/rapport/udlejedeBiler	                |   GET	                |   Hent liste over udlejede biler.                         |
+|`/rapport/udlejedeBiler	`                |   GET	                |   Hent liste over udlejede biler.                         |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/rapport/gem_udlejede_biler	            |   POST	            |   Gem udlejede biler i systemet.                          |
+|`/rapport/gem_udlejede_biler	`            |   POST	            |   Gem udlejede biler i systemet.                          |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
 |/rapport/process_skade_niveau/	        |   GET	                |   Hent alle skadeniveauer.                                |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
