@@ -90,54 +90,37 @@ http://localhost:5004/health
 API-gateway servicen eksponerer en række endpoints til de tre services. Nedenfor er en oversigt over alle tilgængelige ruter.
 
 1. ### Rapport Service
-Endpoint	Metode	Beskrivelse
+|   Endpoint	                               |   Metode	       |   Beskrivelse
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-` `/rapport/login`                        |   POST	               |   Log ind og få adgang til Rapport Service.               |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
+| `/rapport/login`                        |   POST	                |   Log ind og få adgang til Rapport Service.               |
 | `/rapport/protected`                    |   GET	                |   Kontroller adgang til beskyttede data.                  |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
 | `/rapport/udlejedeBiler`                |   GET	                |   Hent liste over udlejede biler.                         |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-| `/rapport/gem_udlejede_biler`            |   POST	            |   Gem udlejede biler i systemet.                          |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-| `/rapport/process_skade_niveau/`	        |   GET	                |   Hent alle skadeniveauer.                                |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-| `/rapport/process_skade_niveau/<id>`	    |   GET	                |   Hent specifikt skadeniveau baseret på ID.               |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
+| `/rapport/gem_udlejede_biler`           |   POST	                |   Gem udlejede biler i systemet.                          |
+| `/rapport/process_skade_niveau/`	      |   GET	                |   Hent alle skadeniveauer.                                |
+| `/rapport/process_skade_niveau/<id>`	   |   GET	                |   Hent specifikt skadeniveau baseret på ID.               |
 | `/rapport/export_skadet_biler`       	|   GET	                |   Eksporter skadet-bil-data som CSV-fil.                  |
 
 
 2. ### Skade Service
-| Endpoint                              |	Metode	            |   Beskrivelse
+|   Endpoint                                 |   Metode	       |   Beskrivelse
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/skade/hent_alle_skade_rapporter	    |    GET	            |   Hent alle skaderapporter.                               |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/skade/tilføj_skade_rapport	        |    POST	            |   Tilføj en ny skaderapport.                              |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/skade/slet_skade_rapport/<reportID>	|    DELETE	            |   Slet en skaderapport med angivet ID.                    |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/skade/send_data	                    |    GET	            |   Send statiske data om skader.                           |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/skade/send_kunde_data/<lejeaftaleID>	|    GET	            |   Hent skadeomkostninger for en specifik lejeaftale.      |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/skade/process_damage_data	            |    POST	            |   Processer skade-data i systemet.                        |
+| `/skade/hent_alle_skade_rapporter`         |   GET	                |   Hent alle skaderapporter.                               |
+| `/skade/tilføj_skade_rapport`	            |   POST	                |   Tilføj en ny skaderapport.                              |
+| `/skade/slet_skade_rapport/<reportID>`	   |   DELETE	             |   Slet en skaderapport med angivet ID.                    |
+| `/skade/send_data`	                        |   GET	                |   Send statiske data om skader.                           |
+| `/skade/send_kunde_data/<lejeaftaleID>`	   |   GET	                |   Hent skadeomkostninger for en specifik lejeaftale.      |
+| `/skade/process_damage_data`	            |   POST	                |   Processer skade-data i systemet.                        |
 
 3. ### Lejeaftale Service
-Endpoint	Metode	Beskrivelse
+|  Endpoint	                                 |   Metode	       |   Beskrivelse
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/lejeaftale/hent_alle_aftaler	        |   GET	                |   Hent alle lejeaftaler.                                  |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/lejeaftale/ledige_biler	            |   GET	                |   Hent ledige biler i systemet.                           |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/lejeaftale/opret_lejeaftale	        |   POST	            |   Opret en ny lejeaftale.                                 |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|   
-|/lejeaftale/status_opdatering/<id>	    |   PUT	                |   Opdater status for en lejeaftale.                       |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/biler	                                |   GET	                |   Hent alle biler i systemet.                             |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/biler/<bil_id>	                    |   GET	                |   Hent specifik bil baseret på ID.                        |
-|---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/biler/<bil_id>/status	                |   PUT	                |   Opdater status for en bil.                              |
+| `/lejeaftale/hent_alle_aftaler`	        |   GET	                |   Hent alle lejeaftaler.                                  |
+| `/lejeaftale/ledige_biler`	              |   GET	                |   Hent ledige biler i systemet.                           |
+| `/lejeaftale/opret_lejeaftale`	           |   POST	                |   Opret en ny lejeaftale.                                 |  
+| `/lejeaftale/status_opdatering/<id>`	     |   PUT	                |   Opdater status for en lejeaftale.                       |
+| `/biler`	                                |   GET	                |   Hent alle biler i systemet.                             |
+| `/biler/<bil_id>`	                       |   GET	                |   Hent specifik bil baseret på ID.                        |
+| `/biler/<bil_id>/status`	                 |   PUT	                |   Opdater status for en bil.                              |
 
 
 4. ### Sundhedstjek
