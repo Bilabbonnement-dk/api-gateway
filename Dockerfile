@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 EXPOSE 5004
 
 # Eksekver denne kommando når Containeren køres
-CMD ["python", "gateway.py"]
+CMD ["python", "api-gateway.py"]

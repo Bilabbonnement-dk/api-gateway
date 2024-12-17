@@ -10,6 +10,15 @@ app = Flask(__name__)
 
 ###############   Routes for Rapport Service   ###############
 
+
+###############   Health check   ###############
+
+# Health check endpoint for API Gateway.
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "API Gateway is running"}), 200
+
+
 # 1. Login route (POST)
 @app.route('/rapport/login', methods=['POST'])
 def rapport_service_login():
@@ -265,14 +274,6 @@ def change_car_status(bil_id):
     response = requests.put(lejeaftale_url, json=request.get_json())
     return jsonify(response.json()), response.status_code
 
-
-
-###############   Health check   ###############
-
-# Health check endpoint for API Gateway.
-@app.route('/health', methods=['GET'])
-def health_check():
-    return jsonify({"status": "API Gateway is running"}), 200
 
     
 
