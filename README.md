@@ -92,19 +92,19 @@ API-gateway servicen eksponerer en række endpoints til de tre services. Nedenfo
 1. ### Rapport Service
 Endpoint	Metode	Beskrivelse
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|`/rapport/login	`                        |   POST	            |   Log ind og få adgang til Rapport Service.               |
+` `/rapport/login`                        |   POST	               |   Log ind og få adgang til Rapport Service.               |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|`/rapport/protected	`                    |   GET	                |   Kontroller adgang til beskyttede data.                  |
+| `/rapport/protected`                    |   GET	                |   Kontroller adgang til beskyttede data.                  |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|`/rapport/udlejedeBiler	`                |   GET	                |   Hent liste over udlejede biler.                         |
+| `/rapport/udlejedeBiler`                |   GET	                |   Hent liste over udlejede biler.                         |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|`/rapport/gem_udlejede_biler	`            |   POST	            |   Gem udlejede biler i systemet.                          |
+| `/rapport/gem_udlejede_biler`            |   POST	            |   Gem udlejede biler i systemet.                          |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/rapport/process_skade_niveau/	        |   GET	                |   Hent alle skadeniveauer.                                |
+| `/rapport/process_skade_niveau/`	        |   GET	                |   Hent alle skadeniveauer.                                |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/rapport/process_skade_niveau/<id>	    |   GET	                |   Hent specifikt skadeniveau baseret på ID.               |
+| `/rapport/process_skade_niveau/<id>`	    |   GET	                |   Hent specifikt skadeniveau baseret på ID.               |
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-|/rapport/export_skadet_biler       	|   GET	                |   Eksporter skadet-bil-data som CSV-fil.                  |
+| `/rapport/export_skadet_biler`       	|   GET	                |   Eksporter skadet-bil-data som CSV-fil.                  |
 
 
 2. ### Skade Service
