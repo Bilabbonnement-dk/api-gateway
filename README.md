@@ -114,28 +114,30 @@ API-gateway servicen eksponerer en række endpoints til de tre services. Nedenfo
 3. ### Lejeaftale Service
 |  Endpoint	                                 |   Metode	       |   Beskrivelse
 |---------------------------------------|-----------------------|-----------------------------------------------------------|
-| `/lejeaftale/hent_alle_aftaler`	        |   GET	                |   Hent alle lejeaftaler.                                  |
-| `/lejeaftale/ledige_biler`	              |   GET	                |   Hent ledige biler i systemet.                           |
-| `/lejeaftale/opret_lejeaftale`	           |   POST	                |   Opret en ny lejeaftale.                                 |  
-| `/lejeaftale/status_opdatering/<id>`	     |   PUT	                |   Opdater status for en lejeaftale.                       |
-| `/biler`	                                |   GET	                |   Hent alle biler i systemet.                             |
-| `/biler/<bil_id>`	                       |   GET	                |   Hent specifik bil baseret på ID.                        |
-| `/biler/<bil_id>/status`	                 |   PUT	                |   Opdater status for en bil.                              |
+| `/lejeaftale/hent_alle_aftaler`	         |   GET	                |   Hent alle lejeaftaler.                                  |
+| `/lejeaftale/ledige_biler`	               |   GET	                |   Hent ledige biler i systemet.                           |
+| `/lejeaftale/opret_lejeaftale`	            |   POST	                |   Opret en ny lejeaftale.                                 |  
+| `/lejeaftale/status_opdatering/<id>`	      |   PUT	                |   Opdater status for en lejeaftale.                       |
+| `/biler`	                                 |   GET	                |   Hent alle biler i systemet.                             |
+| `/biler/<bil_id>`	                        |   GET	                |   Hent specifik bil baseret på ID.                        |
+| `/biler/<bil_id>/status`	                  |   PUT	                |   Opdater status for en bil.                              |
 
 
 4. ### Sundhedstjek
-Endpoint	Metode	Beskrivelse
-/health	GET	Tjek status for API-gatewayen.
+|   Endpoint	                              |   Metode	       |   Beskrivelse
+|---------------------------------------|-----------------------|-----------------------------------------------------------|
+| `/health`	                                 |   GET	                |   Tjek status for API-gatewayen.                          |
 
 
 ## Miljøvariabler
 
 Gatewayen bruger følgende miljøvariabler til at konfigurere service-URL'er:
 
-Variabel	Standardværdi	Beskrivelse
-RAPPORT_SERVICE_URL	http://localhost:5001	URL til Rapport Service.
-SKADES_SERVICE_URL	http://localhost:5002	URL til Skade Service.
-LEJEAFTALE_SERVICE_URL	http://localhost:5003	URL til Lejeaftale Service.
+|   Variabel	            |   Standardværdi	         |   Beskrivelse
+|---------------------------------------|-----------------------|-----------------------------------------------------------|
+| RAPPORT_SERVICE_URL	   | http://localhost:5001    | URL til Rapport Service.                                                  |
+| SKADES_SERVICE_URL	      | http://localhost:5002	   | URL til Skade Service.                                                    |
+| LEJEAFTALE_SERVICE_URL	| http://localhost:5003	   | URL til Lejeaftale Service.                                               |
 
 
 ## Kørsel og Drift
