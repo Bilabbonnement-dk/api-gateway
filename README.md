@@ -4,17 +4,17 @@ Dette repository indeholder koden til API-gateway, der fungerer som en mellemman
 
 ## Indholdsfortegnelse
 
-1. Introduktion
-2. Arkitektur
-3. Installation og Opsætning
-4. Tilgængelige Endpoints
-    * Rapport Service
-    * Skade Service
-    * Lejeaftale Service
-    * Sundhedstjek
-9. Miljøvariabler
-10. Kørsel og Drift
-11. Fejlhåndtering
+1. [Introduktion](#introduktion)
+2. [Arkitektur](#arkitektur)
+3. [Installation og Opsætning](#installation-og-opsætning)
+4. [Tilgængelige Endpoints](#tilgængelige-endpoints)
+    * [Rapport Service](#rapport-service)
+    * [Skade Service](#skade-service)
+    * [Lejeaftale Service](#lejeaftale-service)
+    * [Sundhedstjek](#sundhedstjek)
+9. [Miljøvariabler](#miljøvariabler)
+10. [Kørsel og Drift](#kørsel-og-drift)
+11. [Fejlhåndtering](#fejlhåndtering)
 
 
 ## Introduktion
