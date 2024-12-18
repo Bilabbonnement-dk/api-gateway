@@ -9,6 +9,8 @@
 ![Azure](https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 
+---
+
 Dette repository indeholder koden til API-gateway, der fungerer som en mellemmand for klienter og tre separate microservices, Rapport Service, Lejeaftale Service og Skade Service. API-gateway håndterer routing og videresender anmodninger til de relevante services.
 
 ## Indholdsfortegnelse
